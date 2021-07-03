@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/ff4fadec24.js" crossorigin="anonymous"></script>
+    <title>Titel</title>
+    <link rel="stylesheet" href="stylechatroom2.css" />
+    
+</head>
+
+<body>
+    <div class="wrapper-container">
+        <header class="wrapper-header">
+            <h1>Welcome to Chatroom <i class="fas fa-comments"></i> </h1>
+            <div class="flex">
+            <a href="./index.html" id="btnLeave"> Chat leave</a>
+            </div>
+        </header>
+        <main class="wrapper-main">
+            <div class="wrapper-sidebar">
+                <h3>Room name:</h3>
+                <h2 id="room-name"></h2>
+                <h3> <i class="fas fa-user-friends"> </i> Users:</h3>
+                <ul id="username"></i></ul>
+            </div>
+            <div class="wrapper-message">
+                <div class="message"> </div>
+            
+            </div>
+        </main>
+        <div class="wrapper-input-message">
+            <form id="chat">
+            <input type="text" placeholder="Schreiben Sie eine Nachricht" required>
+            <button class="btn">  Send <i class="fas fa-location-arrow"></i></button>
+        </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="./js/script.js"></script>
+    
+</body>
+
+</html>
